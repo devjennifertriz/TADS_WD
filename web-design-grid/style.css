@@ -1,0 +1,44 @@
+.container {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 2fr 1.5fr;
+    grid-template-rows: repeat(3, 15em);
+    grid-template-areas: 
+    'nav a b c'
+    'nav d d c'
+    'nav e e c'
+    ;
+    gap: 1em;
+    outline: 1px solid blue;
+}
+
+div {
+    padding: 0.5em;
+  }
+  
+  .container > div {
+    outline: 1px solid black;
+  }
+  
+  .nav {
+    grid-area: nav;
+  }
+  
+  .a {
+    grid-area: a;
+  }
+  
+  .b {
+    grid-area: b;
+  }
+  
+  .c {
+    grid-area: c;
+  }
+  
+  .d {
+    grid-area: d;
+  }
+  
+  .e {
+    grid-area: e;
+  }
