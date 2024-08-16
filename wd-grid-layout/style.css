@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto Mono';
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    'a b c c d'
+    'a e f g h'
+    'a i f j j'
+    ;
+    grid-template-columns: 1fr 2fr 3fr 2fr 2fr;
+    grid-template-rows: 200px 1fr 200px;
+    gap: 0.5em;
+    height: 65%;
+    margin: 1em 0;
+}
+
+main > div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Roboto';
+}
+
+main h2 {
+    font-family: 'Roboto Mono';
+}
+
+header {
+    background: linear-gradient(to left,#7292A6, #224459 );
+    width: 100%;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    padding-left: 2em;
+}
+
+.area-a {
+    grid-area: a;
+    background-color: #c3d3db;
+    color: #437a94;
+    font-size: 30px;
+    padding: 1em 1em;
+    font-family: 'Roboto Mono';
+}
+
+.area-a li {
+    list-style: none;
+    padding-bottom: 1em;
+}
+
+.area-a li a {
+    grid-area: a;
+    background-color: #c3d3db;
+    text-decoration: none;
+    color: #437a94;
+}
+
+.area-b {
+    grid-area: b;
+    background-color: #ebebea;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.area-b input {
+    width: 5em;
+    padding: 0.2em;
+    border: 1px solid #224459;
+}
+
+.area-c {
+    grid-area: c;
+    background-color: #ebebea;
+    gap: 1em;
+    padding: 1.5em;
+}
+
+.area-d {
+    grid-area: d;
+    background-image: url(/wd-grid-layout/palestrantes/amanda.jpg);
+    background-size: 20em;
+    filter: saturate(20%);
+}
+
+.area-d p {
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.area-e {
+    grid-area: e;
+    background-color: #ebebea;
+    align-items: center;
+}
+
+.area-f {
+    grid-area: f;
+    background-color: #ebebea;
+    gap: 1em;
+    display: flex;
+    padding: 1.5em;
+}
+
+.area-f form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.area-f .form {
+    height: 30px;
+    width: 300px;
+    padding: 20px;
+}
+
+.area-f .button {
+    height: 40px;
+    width: 200px;
+    background-color: #000000;
+    color: white;
+    border: none;
+}
+
+.area-g {
+    grid-area: g;
+    background-image: url(/wd-grid-layout/palestrantes/georgia.jpg);
+    background-size: 25em;
+    filter: saturate(20%);
+}
+
+.area-h {
+    grid-area: h;
+    background-image: url(/wd-grid-layout/palestrantes/henrique.jpg);
+    background-size: 20em;
+    filter: saturate(20%);
+}
+
+.area-i {
+    grid-area: i;
+    background-image: url(/wd-grid-layout/palestrantes/ellen.jpg);
+    background-size: 20em;
+    filter: saturate(20%);
+}
+
+.area-j {
+    grid-area: j;
+    background-color: #ebebea;
+    align-items: start;
+    gap: 1em;
+    padding: 2.5em;
+}
+
+.area-j ul {
+    padding: 1em;
+}
+
+.fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    filter: opacity(50%);
+    height: 50px;
+}
+
+.fundo p {
+    color: white;
+    filter: opacity(100%);
+}
+
+footer {
+    background-color: #224459;
+    color: white;
+    height: 9.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+}
