@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: linear-gradient(180deg, rgba(156,81,26,1) 0%, rgba(79,41,13,1) 100%);
+}
+
+header {
+    height: 125px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    padding: 0 7em;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: white;
+    padding-left: 1em;
+}
+
+header img {
+    padding: 0 7em;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header a {
+    text-decoration: none;
+    color: #D69465;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header a:hover {
+    color: white;
+    transition: color 1s;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    color: #D69465;
+    font-weight: bold;
+    background-color: white;
+    padding: 8em 4em;
+    gap: 2em;
+    align-items: center;
+    border-radius: 1em;
+}
+
+.form-container form {
+    width: 80%;
+}
+
+.form-container h1 {
+    font-weight: bold;
+}
+
+.form-container input {
+    border-radius: 7px;
+    padding: 0.7em;
+}
+
+.form-container button {
+    background-color: white;
+    color: #D69465;
+    border: 1px solid #D69465;
+    box-shadow: 0.2em 0.2em 0.2em #D69465;
+    width: 30%;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.form-container button:hover {
+    background-color: #D69465;
+    color: white;
+    transition: background-color 0.7s;
+}
+
+.form-info {
+    width: 50%;
+    padding: 4em;
+}
+
+.form-info h1{
+    color: white;
+    font-size: 74px;
+    text-align: end;
+    font-weight: bold;
+}
+
+.form-info p {
+    color: #D69465;
+    font-weight: 500;
+    padding-top: 2em;
+    text-align: end;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #D69465;
+    font-weight: 700;
+    margin-top: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #D69465;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+       background-color: white;
+       color: #4F290D; 
+    }
+}
